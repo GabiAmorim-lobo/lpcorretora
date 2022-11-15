@@ -1,0 +1,23 @@
+function ocultar(){
+    var tipo = document.getElementById("00NDn000007rAt2").value;
+    var visivel = true;
+    if(tipo == "Pessoa física"){
+    document.getElementById("hidden").style.display = "none";
+    visivel = false;
+    }else if(tipo == "Pessoa jurídica"){
+    document.getElementById("hidden").style.display = "block";
+    visivel = true;
+    document.getElementById("company").required = true;
+    document.getElementById("employees").required = true;
+    }
+
+    if(tipo == "Pessoa física"){
+        document.getElementById("hidden-2").style.display = "none";
+        visivel = false;
+        }else if(tipo == "Pessoa jurídica"){
+        document.getElementById("hidden-2").style.display = "block";
+        visivel = true;
+        }
+
+
+}
